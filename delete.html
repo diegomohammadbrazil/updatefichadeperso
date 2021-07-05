@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/static/style.css" />
+    <link rel="stylesheet" href="/static/pages/readAll.css" />
+    <link rel="stylesheet" href="/static/pages/delete.css" />
+    <title>Crud Final \o/</title>
+  </head>
+  <body>
+    {% include 'header.html' %} {% if sucesso %}
+
+    <div class="bloco removidoSucesso">
+      <p>Personagem excluído com sucesso.</p>
+    </div>
+
+    <div class="bloco">
+      <a href="/read" class="botao">Registros</a>
+    </div>
+
+    {% elif registro %}
+    <div class="bloco">
+      <h2>Excuir Ficha de Personagem</h2>
+    </div>
+
+    <div class="bloco">
+      <p>
+        Tem certeza que deseja excluir o Personage
+        <span class="highlight">{{registro.nome}}</span>?
+        <br />
+        <br />
+        <a href="/delete/{{registro.id}}/confirmed" class="botao">Remover</a>
+        <a href="/read" class="botao">Cancelar</a>
+      </p>
+    </div>
+
+    {% else %}
+
+    <div class="bloco">
+      <h2>Excuir Personagem</h2>
+    </div>
+
+    <div class="bloco">
+      <p>
+        Não foi encontrado o filme com esse ID. <br /><br />
+        <a href="/read" class="botao">Voltar</a>
+      </p>
+    </div>
+
+    {% endif %}
+  </body>
+</html>

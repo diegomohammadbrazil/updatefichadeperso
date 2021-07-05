@@ -1,0 +1,38 @@
+.descricao {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.personagem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  border: 1px solid red;
+  margin: 1rem;
+}
+
+.personagem img {
+  max-width: 15rem;
+}
+
+.atributos {
+  margin: 1rem;
+  padding: 1rem;
+  border: 1px solid blue;
+  max-width: 15rem;
+  text-align: center;
+}
+.valores{
+    text-align: left;
+  }
+  
+.bio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid red;
+    margin: 1rem;  
+}

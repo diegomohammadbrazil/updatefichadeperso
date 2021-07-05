@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+body {
+  background: #eeeeee;
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  min-height: calc(100vh - 40px);
+}
+
+.header {
+  padding-top: 20px;
+  background: #ffffff;
+  background-image: url('/static/img/fundoCabecalho.jpg');
+  background-position: center;
+  box-shadow: 0 0 15px black;
+}
+
+#titulo{
+  margin: 1rem; 
+  text-shadow: 0 0 15px white; 
+  color: white;
+}
+
+.bloco {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  
+}
+
+.botao {
+  border: none;
+  border-radius: 10px;
+  color: white;
+  text-shadow: 0 0 15px white;
+  cursor: pointer;
+  display: inline-block;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  width: 6rem;
+  text-align: center;
+  font-weight: bolder;  
+  text-decoration: none;
+
+}
+
+.botao:hover {
+  background-color: black;
+  color: white;
+  text-shadow: 0 0 15px white;
+}

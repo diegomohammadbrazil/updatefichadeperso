@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style.css" />
+    <link rel="stylesheet" href="../static/fichaCompleta.css">
+    <title>Document</title>
+</head>
+
+<body>
+    {% include 'header.html' %}
+
+    <div class="descricao">
+        <div class="personagem">
+            <h2>{{registro.nome}}</h2> <br>
+            <h2>{{registro.classe}}</h2>
+            <img src="{{registro.imagem}}" alt="Classe do personagem {{registro.classe}}" class="imagem" width="400" />
+        </div>
+
+        <div class="atributos">
+            <h2>Atributos do Personagem</h2>
+            <div class="atributos valores">
+                <p>
+                <h3>Força: {{registro.forca}}</h3>
+                </p>
+                <p>
+                <h3>Destreza: {{registro.destreza}}</h3>
+                </p>
+                <p>
+                <h3>Constituição: {{registro.constituicao}}</h3>
+                </p>
+                <p>
+                <h3>Sabedoria: {{registro.sabedoria}}</h3>
+                </p>
+                <p>
+                <h3>Inteligência: {{registro.inteligencia}}</h3>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="bio">
+        <h2>Biografia do Personagem.</h2>
+        <h4>{{registro.bio}}</h4>
+    </div>
+</body>
+
+</html>
